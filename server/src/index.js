@@ -16,14 +16,13 @@ const authRoutes = require('./routes/authRoutes');
 const userRoutes = require('./routes/userRoutes');
 const clipdropRoutes = require('./routes/clipdropRoutes');
 
-// Create Express app
+
 const app = express();
 const PORT = process.env.PORT || 5001;
 
-// Connect to MongoDB with fallback to local connection
+// Connect to MongoDB 
 const connectToMongoDB = async () => {
   try {
-    // Try to connect with the provided URI
     await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/promptpix');
     if (process.env.NODE_ENV !== 'production') {
       console.log('Connected to MongoDB');
@@ -31,8 +30,6 @@ const connectToMongoDB = async () => {
   } catch (err) {
     console.error('MongoDB connection error:', err);
 
-    // For development purposes, we can continue without MongoDB
-    // In a production environment, you would want to exit the process
     if (process.env.NODE_ENV === 'production') {
       console.error('Exiting process due to MongoDB connection failure in production');
       process.exit(1);
@@ -42,7 +39,7 @@ const connectToMongoDB = async () => {
   }
 };
 
-// Initialize MongoDB connection
+//  MongoDB connection
 connectToMongoDB();
 
 // Middleware
@@ -53,7 +50,7 @@ app.use(cors({
     // Allow requests with no origin (like mobile apps, curl requests)
     if (!origin) return callback(null, true);
 
-    // Define allowed origins
+    // allowed origins
     const allowedOrigins = [
       'http://localhost:5173',
       'http://localhost:5174',
