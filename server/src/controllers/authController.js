@@ -4,6 +4,13 @@ const { promisify } = require('util');
 const { createCompleteUser, createMockUser } = require('../utils/userUtils');
 const crypto = require('crypto');
 const emailService = require('../services/emailService');
+const dotenv= require('dotenv');
+const path = require('path');
+
+
+const envPath = path.join(__dirname, '../../.env');
+
+dotenv.config({path:envPath})
 
 // Create JWT token
 const signToken = (id) => {
