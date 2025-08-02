@@ -1,10 +1,9 @@
-// Load environment variables FIRST before any other imports
 const dotenv = require('dotenv');
 const path = require('path');
 const envPath = path.join(__dirname, '../.env');
 dotenv.config({ path: envPath });
 
-// Now import other modules after environment is loaded
+
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
