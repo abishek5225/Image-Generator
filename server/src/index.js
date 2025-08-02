@@ -58,7 +58,7 @@ app.use(cors({
       'http://127.0.0.1:5174'
     ];
 
-    // Check if the origin is allowed
+    //origin allowed checking
     if (allowedOrigins.indexOf(origin) !== -1 || process.env.NODE_ENV !== 'production') {
       callback(null, true);
     } else {
@@ -76,7 +76,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/clipdrop', clipdropRoutes);
 
-// Health check route
+
 app.use('/api/health', (req, res) => {
   res.json({ status: 'ok', message: 'PromptPix API is running' });
 });
@@ -92,7 +92,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Serve static files in production
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../../client/dist')));
 
@@ -101,7 +101,6 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-// Start server
 app.listen(PORT, () => {
   if (process.env.NODE_ENV !== 'production') {
     console.log(`Server running on port ${PORT}`);
