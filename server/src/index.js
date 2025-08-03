@@ -1,7 +1,6 @@
-const dotenv = require('dotenv');
+
 const path = require('path');
-const envPath = path.join(__dirname, '../.env');
-dotenv.config({ path: envPath });
+require('dotenv').config();
 
 
 const express = require('express');
@@ -20,10 +19,13 @@ const clipdropRoutes = require('./routes/clipdropRoutes');
 const app = express();
 const PORT = process.env.PORT || 5001;
 
+console.log("✅ MONGODB_URI:", process.env.MONGODB_URI);
+
+
 // Connect to MongoDB 
 const connectToMongoDB = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/promptpix');
+    await mongoose.connect(process.env.MONGODB_URI);
     if (process.env.NODE_ENV !== 'production') {
       console.log('Connected to MongoDB');
     }
@@ -34,7 +36,7 @@ const connectToMongoDB = async () => {
       console.error('Exiting process due to MongoDB connection failure in production');
       process.exit(1);
     } else {
-      console.log('Attempting to continue without MongoDB...');
+      console.log('try again');
     }
   }
 };
