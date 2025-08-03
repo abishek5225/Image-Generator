@@ -12,7 +12,7 @@ const loginLimiter = rateLimit({
     status: 'fail',
     message: 'Too many login attempts from this IP, please try again after 15 minutes'
   },
-  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+  standardHeaders: true, // Return rate limit 
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
   handler: (req, res) => {
     res.status(429).json({
