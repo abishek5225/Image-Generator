@@ -171,11 +171,13 @@ const About = () => {
               <div className="mt-6 flex items-center">
                 <div className="flex -space-x-2 mr-4">
                  
-                  <div className=" h-full w-full  bg-surface-container overflow-hidden mr-10">
+                  <div className=" h-full w-full   overflow-hidden mr-10">
+                    <span>Hemanta Rajbanshi</span>
                     <img src="/images/about/Hemanta.jpg" alt="Hemanta" className="h-full w-full object-cover" />
                   </div>
 
-                  <div className=" h-full w-full rounded-50% bg-surface-container overflow-hidden">
+                  <div className=" h-full w-full rounded-50%  overflow-hidden">
+                    <span>Abishek Chaulagain</span>
                     <img src="/images/about/Abhishek.JPG" alt="Abhishek" className="h-full w-full object-cover" />
                   </div>
 
