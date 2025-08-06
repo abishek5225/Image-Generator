@@ -18,9 +18,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 - **Background Removal**: Automatically remove backgrounds from images with precision
 - **Image Editor**: Edit your images with a comprehensive set of tools
 
-### User Features
-
-
 
 
 
