@@ -91,9 +91,6 @@ npm install
 cd ../client
 npm install
 
-# Ensure MongoDB is running
-# For local MongoDB: mongod --dbpath /path/to/data/directory
-# For MongoDB Atlas: Make sure your connection string is in server/.env
 
 
 
