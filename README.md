@@ -20,7 +20,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 
 ### User Features
 
-- **User Authentication**: Secure login and registration system
 
 
 
