@@ -22,7 +22,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 
 - **User Authentication**: Secure login and registration system
 - **Personal Gallery**: Save and organize your generated images
-- **Credit System**: Manage usage of AI tools with a credit-based system
 
 
 
