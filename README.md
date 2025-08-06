@@ -39,9 +39,7 @@ PromptPix/
 │   │   ├── context/    # React context providers
 │   │   ├── pages/      # Page components
 │   │   ├── services/   # API and utility services
-│   │   └── styles/     # CSS and styling files
-│   ├── .env.example    # Example environment variables
-│
+
 
 ## 🔑 API Integration
 
