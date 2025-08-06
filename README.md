@@ -73,11 +73,6 @@ PromptPix/
 - npm or yarn
 - MongoDB (local installation or MongoDB Atlas account)
 
-### Clone the Repository
-```bash
-git clone https://github.com/yourusername/promptpix.git
-cd promptpix
-```
 
 
 
