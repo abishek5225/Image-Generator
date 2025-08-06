@@ -58,12 +58,6 @@ PromptPix/
 - **Framer Motion**: For smooth animations and transitions
 - **TailwindCSS**: For styling and responsive design
 
-### Backend
-- **Node.js**: JavaScript runtime
-- **Express**: Web framework for Node.js
-- **Cors**: For cross-origin resource sharing
-
-
 
 
 
