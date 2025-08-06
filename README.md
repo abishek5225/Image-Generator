@@ -26,9 +26,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Dark Mode**: Toggle between light and dark themes for comfortable viewing
 
-## 🏗️ Project Structure
-
-The project follows a client-server architecture:
 
 
 
