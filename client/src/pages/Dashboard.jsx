@@ -1,6 +1,5 @@
 import { Link, useLocation, Outlet, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import CreditsDisplay from '../components/CreditsDisplay';
 import CreditWarning from '../components/CreditWarning';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';

@@ -27,8 +27,6 @@ import Settings from './pages/Settings';
 
 // Tool Pages
 import TextToImage from './pages/tools/TextToImage';
-import Upscale from './pages/tools/Upscale';
-import Uncrop from './pages/tools/Uncrop';
 import RemoveBackground from './pages/tools/RemoveBackground';
 import ImageEditor from './pages/tools/ImageEditor';
 import Gallery from './pages/Gallery';
@@ -91,8 +89,6 @@ const router = createBrowserRouter(
       ),
       children: [
         { path: "text-to-image", element: <TextToImage /> },
-        { path: "upscale", element: <Upscale /> },
-        { path: "uncrop", element: <Uncrop /> },
         { path: "remove-bg", element: <RemoveBackground /> },
         { path: "image-editor", element: <ImageEditor /> },
         { path: "gallery", element: <Gallery /> },
