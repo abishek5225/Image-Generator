@@ -37,8 +37,6 @@ PromptPix/
 │   ├── src/            # Source code
 │   │   ├── components/ # Reusable UI components
 │   │   ├── context/    # React context providers
-│   │   ├── pages/      # Page components
-│   │   ├── services/   # API and utility services
 
 
 ## 🔑 API Integration
