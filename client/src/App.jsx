@@ -4,6 +4,16 @@ import { AuthProvider, useAuth } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import Layout from './components/Layout';
 
+//clerk authentication
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/clerk-react";
+
+
 // Pages
 import LandingPage from './pages/LandingPage';
 import Login from './pages/Login';
@@ -13,7 +23,6 @@ import Dashboard from './pages/Dashboard';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import UserProfile from './pages/UserProfile';
-import Pricing from './pages/Pricing';
 import Settings from './pages/Settings';
 
 // Tool Pages
@@ -88,7 +97,6 @@ const router = createBrowserRouter(
         { path: "image-editor", element: <ImageEditor /> },
         { path: "gallery", element: <Gallery /> },
         { path: "profile", element: <UserProfile /> },
-        { path: "upgrade", element: <Pricing /> },
         { path: "settings", element: <Settings /> }
       ]
     },
