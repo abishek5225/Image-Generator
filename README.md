@@ -15,7 +15,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 - **Text to Image**: Generate stunning images from text descriptions using advanced AI models
 - **Image Upscaling**: Enhance image resolution and quality without losing details
 - **Image Uncropping**: Expand your images beyond their original boundaries with AI-powered content generation
-- **Background Removal**: Automatically remove backgrounds from images with precision
 
 
 
