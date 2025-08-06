@@ -63,10 +63,6 @@ PromptPix/
 - **Express**: Web framework for Node.js
 - **Cors**: For cross-origin resource sharing
 
-### APIs
-- **ClipDrop API**: For AI image processing capabilities
-
-## 🛠️ Installation and Setup
 
 
 
