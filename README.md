@@ -79,14 +79,6 @@ git clone https://github.com/yourusername/promptpix.git
 cd promptpix
 ```
 
-### Complete Application Setup
-The easiest way to set up the entire application:
-
-```bash
-# Install server dependencies
-cd server
-npm install
-
 
 
 
