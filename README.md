@@ -33,10 +33,6 @@ The project follows a client-server architecture:
 ```
 PromptPix/
 ├── client/             # Frontend React application
-│   ├── public/         # Static assets
-│   ├── src/            # Source code
-│   │   ├── components/ # Reusable UI components
-│   │   ├── context/    # React context providers
 
 
 ## 🔑 API Integration
