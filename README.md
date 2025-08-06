@@ -87,11 +87,6 @@ The easiest way to set up the entire application:
 cd server
 npm install
 
-# Install client dependencies
-cd ../client
-npm install
-
-
 
 
 
