@@ -102,13 +102,6 @@ npm run dev
 # In a new terminal, start the client
 cd ../client
 npm run dev
-```
-
-### Frontend Setup (Manual)
-```bash
-# Navigate to client directory
-cd client
-
 
 
 
