@@ -95,13 +95,6 @@ npm install
 # For local MongoDB: mongod --dbpath /path/to/data/directory
 # For MongoDB Atlas: Make sure your connection string is in server/.env
 
-# Start the server
-cd ../server
-npm run dev
-
-# In a new terminal, start the client
-cd ../client
-npm run dev
 
 
 
