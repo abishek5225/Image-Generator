@@ -51,13 +51,6 @@ PromptPix/
 
 ## 🚀 Technologies Used
 
-### Frontend
-- **React**: UI library for building the user interface
-- **Vite**: Next-generation frontend tooling
-- **React Router**: For navigation and routing
-- **Framer Motion**: For smooth animations and transitions
-- **TailwindCSS**: For styling and responsive design
-
 
 
 
