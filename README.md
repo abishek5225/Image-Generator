@@ -49,9 +49,6 @@ PromptPix/
     └── package.json    # Backend dependencies
 ```
 
-## 🚀 Technologies Used
-
-
 
 
 ## 🔑 API Integration
