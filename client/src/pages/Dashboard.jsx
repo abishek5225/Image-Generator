@@ -81,8 +81,6 @@ const Dashboard = () => {
 
   const tools = [
     { id: 'text-to-image', name: 'Text to Image', path: '/dashboard/text-to-image', icon: 'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z' },
-    { id: 'upscale', name: 'Upscale', path: '/dashboard/upscale', icon: 'M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5' },
-    { id: 'uncrop', name: 'Uncrop', path: '/dashboard/uncrop', icon: 'M4 8v8a2 2 0 002 2h12a2 2 0 002-2V8m-4-4v8m-12 0V4a2 2 0 012-2h12a2 2 0 012 2v4' },
     { id: 'remove-bg', name: 'Remove Background', path: '/dashboard/remove-bg', icon: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z' },
     { id: 'image-editor', name: 'Image Editor', path: '/dashboard/image-editor', icon: 'M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z' },
   ];
@@ -234,16 +232,7 @@ const Dashboard = () => {
                   </svg>
                   Settings
                 </Link>
-                <Link
-                  to="/dashboard/upgrade"
-                  className="flex items-center px-3 py-3 text-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-xl transition-all duration-medium mb-1"
-                  onClick={() => setIsProfileMenuOpen(false)}
-                >
-                  <svg className="w-4 h-4 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
-                  </svg>
-                  Purchase Credits
-                </Link>
+                
                 <hr className="my-3 border-outline-variant/20" />
                 <button
                   onClick={() => {

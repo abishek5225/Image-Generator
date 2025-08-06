@@ -167,19 +167,20 @@ const About = () => {
               <p className="body-large text-gray-600 dark:text-gray-300">
                 With Abhishek joining as Lead Developer, our small but dedicated team has created an intuitive platform that transforms complex AI processes into simple, accessible tools that anyone can use to create stunning visuals with just a few clicks.
               </p>
-
+ <div className="text-3xl text-on-surface-variant">Our founding team</div>
               <div className="mt-6 flex items-center">
                 <div className="flex -space-x-2 mr-4">
-                  <div className="inline-block h-10 w-10 rounded-full ring-2 ring-primary-40 bg-surface-container overflow-hidden">
+                 
+                  <div className=" h-full w-full  bg-surface-container overflow-hidden mr-10">
                     <img src="/images/about/Hemanta.jpg" alt="Hemanta" className="h-full w-full object-cover" />
                   </div>
 
-                  <div className="inline-block h-10 w-10 rounded-full ring-2 ring-primary-40 bg-surface-container overflow-hidden">
+                  <div className=" h-full w-full rounded-50% bg-surface-container overflow-hidden">
                     <img src="/images/about/Abhishek.JPG" alt="Abhishek" className="h-full w-full object-cover" />
                   </div>
 
                 </div>
-                <span className="text-sm text-on-surface-variant">Our founding team</span>
+                
               </div>
             </div>
           </motion.div>

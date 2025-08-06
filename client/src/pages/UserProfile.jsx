@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import SkeletonLoader from '../components/SkeletonLoader';
 import DashboardContentWrapper from '../components/DashboardContentWrapper';
 import { useAuth } from '../context/AuthContext';
 import { getUserGalleryItems, getUserStatistics, addGalleryItem } from '../services/local-storage/gallery';
@@ -70,7 +69,7 @@ const UserProfile = () => {
       const stats = getUserStatistics(userId);
       setStatistics(stats);
 
-      // Update user object with real-time statistics if they differ
+      // Update user object with real time statistics if they differ
       if (user.imagesGenerated !== stats.imagesGenerated || user.imagesEdited !== stats.imagesEdited) {
         const updatedUser = {
           ...user,
