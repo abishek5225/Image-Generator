@@ -68,12 +68,6 @@ PromptPix/
 
 ## 🛠️ Installation and Setup
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- MongoDB (local installation or MongoDB Atlas account)
-
-
 
 
 
