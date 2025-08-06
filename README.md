@@ -44,10 +44,6 @@ PromptPix/
 │   └── package.json    # Frontend dependencies
 └── server/             # Backend Express server
     ├── src/            # Source code
-    │   └── index.js    # Server entry point
-    ├── .env.example    # Example environment variables
-    └── package.json    # Backend dependencies
-```
 
 
 
