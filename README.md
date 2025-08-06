@@ -41,11 +41,7 @@ PromptPix/
 │   │   ├── services/   # API and utility services
 │   │   └── styles/     # CSS and styling files
 │   ├── .env.example    # Example environment variables
-│   └── package.json    # Frontend dependencies
-└── server/             # Backend Express server
-    ├── src/            # Source code
-
-
+│
 
 ## 🔑 API Integration
 
