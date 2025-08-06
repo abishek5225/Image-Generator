@@ -16,7 +16,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 - **Image Upscaling**: Enhance image resolution and quality without losing details
 - **Image Uncropping**: Expand your images beyond their original boundaries with AI-powered content generation
 - **Background Removal**: Automatically remove backgrounds from images with precision
-- **Image Editor**: Edit your images with a comprehensive set of tools
 
 
 
