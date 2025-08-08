@@ -9,7 +9,7 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 > Note: The demo has limited credits for AI operations. Sign up for a
 ## 🔑 API Integration
 
-PromptPix uses the ClipDrop API for AI image processing. You'll need to:
+PromptPix uses the ClipDrop API for AI image processing.
 
 
 
