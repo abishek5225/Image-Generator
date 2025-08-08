@@ -17,5 +17,5 @@ PromptPix uses the ClipDrop API for AI image processing. You'll need to:
 
 
 ### Client
-The client is 
+
 
