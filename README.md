@@ -10,8 +10,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 
 ## ✨ Features
 
-### AI Image Tools
-
 
 
 
