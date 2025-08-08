@@ -6,7 +6,6 @@ PromptPix is a modern web application that provides powerful AI-powered image ge
 
 Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix without installation.
 
-> Note: The demo has limited credits for AI operations. Sign up for a
 
 PromptPix uses the ClipDrop API for AI image processing.
 
