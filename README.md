@@ -17,6 +17,5 @@ PromptPix uses the ClipDrop API for AI image processing. You'll need to:
 
 
 ### Client
-The client is built with React and uses Vite for 
-
+The client is built with React
 
