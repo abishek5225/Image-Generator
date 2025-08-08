@@ -29,5 +29,3 @@ The server is a simple Express application that serves the API and static files 
 
 
 ## 🤝 Contributing
-
-Contributions are welcome! P
