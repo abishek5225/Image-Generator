@@ -14,7 +14,7 @@ PromptPix uses the ClipDrop API for AI image processing. You'll need to:
 1. Sign up for a ClipDrop API key at [https://clipdrop.co/apis](https://clipdrop.co/apis)
 2. Add your API key to the `.env` file in the client directory
 
-## 💻 Development
+
 
 ### Client
 The client is built with React and uses Vite for development and building. Key features:
