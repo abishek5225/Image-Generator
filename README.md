@@ -4,7 +4,7 @@ PromptPix is a modern web application that provides powerful AI-powered image ge
 
 ## 🎮 Demo
 
-Visit our [live demo](https://
+
 
 
 PromptPix uses the ClipDrop API for AI image processing.
