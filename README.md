@@ -13,8 +13,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 ### AI Image Tools
 
 - **Text to Image**: Generate stunning images from text descriptions using advanced AI models
-- **Image Upscaling**: Enhance image resolution and quality without losing details
-
 
 
 
