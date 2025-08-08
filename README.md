@@ -25,4 +25,3 @@ The client is built with React and uses Vite for development and building. Key f
 - **TailwindCSS**: For styling with a custom theme
 
 ### Server
-The server is a simple Express application that serves the API and static files in production.
