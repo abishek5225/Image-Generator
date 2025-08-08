@@ -15,7 +15,3 @@ PromptPix uses the ClipDrop API for AI image processing. You'll need to:
 2. Add your API key to the `.env` file in the client directory
 
 
-
-### Client
-
-
