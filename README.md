@@ -23,5 +23,3 @@ The client is built with React and uses Vite for development and building. Key f
 - **Context API**: For state management (auth, theme, etc.)
 - **Framer Motion**: For animations and transitions
 - **TailwindCSS**: For styling with a custom theme
-
-### Server
