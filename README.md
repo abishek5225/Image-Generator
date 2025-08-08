@@ -26,6 +26,3 @@ The client is built with React and uses Vite for development and building. Key f
 
 ### Server
 The server is a simple Express application that serves the API and static files in production.
-
-
-## 🤝 Contributing
