@@ -21,4 +21,3 @@ The client is built with React and uses Vite for development and building. Key f
 
 - **React Router**: For navigation with future flags enabled
 - **Context API**: For state management (auth, theme, etc.)
-- **Framer Motion**: For animations and transitions
