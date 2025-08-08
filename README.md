@@ -8,11 +8,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 
 > Note: The demo has limited credits for AI operations. Sign up for a full account to access all features.
 
-## ✨ Features
-
-
-
-
 
 ## 🔑 API Integration
 
