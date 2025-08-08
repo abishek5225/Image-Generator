@@ -12,6 +12,6 @@ Visit our [live demo](https://promptpix-demo.vercel.app) to try out PromptPix wi
 PromptPix uses the ClipDrop API for AI image processing. You'll need to:
 
 1. Sign up for a ClipDrop API key at [https://clipdrop.co/apis](https://clipdrop.co/apis)
-2. Add your API
+
 
 
