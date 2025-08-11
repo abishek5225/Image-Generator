@@ -21,7 +21,7 @@ export const IMAGE_CONFIG = {
 
 // User Configuration
 export const USER_CONFIG = {
-  DEFAULT_CREDITS: 10,
+  DEFAULT_CREDITS: 20,
   MIN_PASSWORD_LENGTH: 6,
   MAX_BIO_LENGTH: 500,
   MAX_DISPLAY_NAME_LENGTH: 50,
@@ -29,13 +29,11 @@ export const USER_CONFIG = {
 
 // Credit Configuration
 export const CREDIT_CONFIG = {
-  OPERATION_COST: 2, // Credits required per AI operation
+  OPERATION_COST: 1, // Credits required per AI operation
   LOW_CREDIT_THRESHOLD: 5, // Show warning when credits are at or below this
   OPERATIONS: {
-    TEXT_TO_IMAGE: 2,
-    UPSCALE: 2,
-    UNCROP: 2,
-    REMOVE_BACKGROUND: 2,
+    TEXT_TO_IMAGE: 1,
+    REMOVE_BACKGROUND: 1,
     IMAGE_EDITOR: 0, // Image editor is free
   },
 };

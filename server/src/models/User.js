@@ -22,7 +22,7 @@ const userSchema = new mongoose.Schema({
   },
   credits: {
     type: Number,
-    default: 10
+    default: 20
   },
   initialCreditsGranted: {
     type: Boolean,
