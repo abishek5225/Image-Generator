@@ -50,7 +50,7 @@ const RemoveBackground = () => {
 
     try {
       // Use 2 credits for background removal
-      const creditSuccess = await useCredits(2);
+      const creditSuccess = await useCredits(1);
 
       if (!creditSuccess) {
         throw new Error('Failed to use credits. Please try again.');

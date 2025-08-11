@@ -49,7 +49,7 @@ const TextToImage = () => {
 
     try {
       // Use 2 credits for text-to-image generation
-      const creditSuccess = await useCredits(2);
+      const creditSuccess = await useCredits(1);
 
       if (!creditSuccess) {
         throw new Error('Failed to use credits. Please try again.');
@@ -379,7 +379,7 @@ const TextToImage = () => {
 // Wrap the component with CreditCheck to ensure user has enough credits
 export default function TextToImageWithCreditCheck() {
   return (
-    <CreditCheck requiredCredits={2} toolName="Text to Image">
+    <CreditCheck requiredCredits={1} toolName="Text to Image">
       <TextToImage />
     </CreditCheck>
   );
