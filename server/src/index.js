@@ -36,7 +36,7 @@ const connectToMongoDB = async () => {
       console.error('Exiting process due to MongoDB connection failure in production');
       process.exit(1);
     } else {
-      console.log('try again');
+      console.log('try again')
     }
   }
 };

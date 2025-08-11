@@ -5,14 +5,6 @@ import { ThemeProvider } from './context/ThemeContext';
 import Layout from './components/Layout';
 
 //clerk authentication
-import {
-  SignedIn,
-  SignedOut,
-  SignInButton,
-  SignUpButton,
-  UserButton,
-} from "@clerk/clerk-react";
-
 
 // Pages
 import LandingPage from './pages/LandingPage';
