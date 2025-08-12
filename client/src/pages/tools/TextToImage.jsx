@@ -62,7 +62,7 @@ const TextToImage = () => {
       // Parse API's fixed resolution into width and height
       const [width, height] = API_RESOLUTION.split('x').map(Number);
 
-      // Call the ClipDrop API to generate an image at high resolution
+      // Call the ClipDrop API 
       const imageBlob = await generateImage(prompt, {
         width,
         height
