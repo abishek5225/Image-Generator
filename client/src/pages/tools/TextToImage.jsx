@@ -48,7 +48,7 @@ const TextToImage = () => {
     setError('');
 
     try {
-      // Use 2 credits for text-to-image generation
+      
       const token = localStorage.getItem(STORAGE_KEYS.AUTH_TOKEN);
       if (!token) {
         throw new Error('Please log in again to continue.');
