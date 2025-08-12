@@ -11,7 +11,7 @@ export const AuthProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const [creditsLoading, setCreditsLoading] = useState(false);
 
-  // Add a debounce timer reference to prevent too many update requests
+  //debounce timer to prevent too many update requests
   const updateTimerRef = useRef(null);
   const lastUpdateTimeRef = useRef(0);
   const refreshIntervalRef = useRef(null);
