@@ -199,7 +199,7 @@ const Dashboard = () => {
               style={{
                 left: '16px', 
                 top: '120px', 
-                width: '288px', // Match sidebar width (w-72)
+                width: '288px', 
                 bottom: '16px', // Match sidebar bottom
                 backdropFilter: 'blur(20px)',
                 WebkitBackdropFilter: 'blur(20px)',
