@@ -197,7 +197,7 @@ const Dashboard = () => {
             <motion.div
               className="fixed z-[99999] bg-white/95 dark:bg-gray-900/95"
               style={{
-                left: '16px', // Match sidebar position
+                left: '16px', 
                 top: '120px', // Position below profile button
                 width: '288px', // Match sidebar width (w-72)
                 bottom: '16px', // Match sidebar bottom
