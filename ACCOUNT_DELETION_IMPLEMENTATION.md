@@ -138,9 +138,4 @@ deleteAccount: async (password) => {
 6. Test error handling for invalid passwords
 7. Confirm notification display and timing
 
-## Browser Compatibility
 
-- Uses standard localStorage/sessionStorage APIs
-- Compatible with all modern browsers
-- Graceful fallback for storage limitations
-- Cross-browser tested redirection methods
