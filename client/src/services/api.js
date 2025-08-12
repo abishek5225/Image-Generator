@@ -117,7 +117,7 @@ export const authAPI = {
     return apiRequest('/auth/update-password', {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${localStorage.getItem('token')}`
+        'Authorization': `Bearer ${localStorage.getItem(STORAGE_KEYS.AUTH_TOKEN)}`
       },
       body: JSON.stringify({
         currentPassword,
@@ -151,7 +151,7 @@ export const authAPI = {
     const data = await apiRequest('/auth/delete-account', {
       method: 'DELETE',
       headers: {
-        'Authorization': `Bearer ${localStorage.getItem('token')}`
+        'Authorization': `Bearer ${localStorage.getItem(STORAGE_KEYS.AUTH_TOKEN)}`
       },
       body: JSON.stringify({
         password
