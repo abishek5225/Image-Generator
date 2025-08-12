@@ -159,7 +159,6 @@ export const authAPI = {
     });
 
     // Clear all authentication tokens immediately after successful deletion
-    localStorage.removeItem('token');
     localStorage.removeItem(STORAGE_KEYS.AUTH_TOKEN);
     localStorage.removeItem(STORAGE_KEYS.CURRENT_USER);
 
