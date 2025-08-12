@@ -76,7 +76,7 @@ const TextToImage = () => {
       sessionStorage.setItem('lastGeneratedImageType', imageBlob.type);
       sessionStorage.setItem('lastGeneratedImageId', Date.now().toString());
 
-      // Create result object with the actual blob for reliable downloading
+      // actual blob for reliable downloading
       const newResult = {
         id: Date.now().toString(),
         url: imageUrl,
