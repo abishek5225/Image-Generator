@@ -207,29 +207,36 @@ export const userAPI = {
 export const clipdropAPI = {
   // Text to image
   textToImage: async (prompt, options = {}) => {
+    const token = localStorage.getItem(STORAGE_KEYS.AUTH_TOKEN);
+    console.log('Token exists:', !!token); // Debug log
+    
     const requestBody = { prompt };
 
     const response = await fetch(`${API_URL}/clipdrop/text-to-image`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${localStorage.getItem(STORAGE_KEYS.AUTH_TOKEN)}`,
+        'Authorization': `Bearer ${token}`,
       },
       body: JSON.stringify(requestBody),
       credentials: 'include',
     });
+    
+    console.log('Response status:', response.status); // Debug log
+    
     if (!response.ok) {
       try {
         const errorData = await response.json();
+        console.log('Error data:', errorData); // Debug log
         throw new Error(errorData.message || 'Failed to generate image');
       } catch (jsonError) {
-        // Handle non-JSON error responses
         throw new Error(`Failed to generate image: ${response.status} ${response.statusText}`);
       }
     }
 
     return response.blob();
   },
+
 
 
   // Remove background
