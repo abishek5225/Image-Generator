@@ -30,7 +30,7 @@ export const USER_CONFIG = {
 // Credit Configuration
 export const CREDIT_CONFIG = {
   OPERATION_COST: 1, // Credits required per AI operation
-  LOW_CREDIT_THRESHOLD: 5, // Show warning when credits are at or below this
+  LOW_CREDIT_THRESHOLD: 3, // Show warning when credits are at or below this
   OPERATIONS: {
     TEXT_TO_IMAGE: 1,
     REMOVE_BACKGROUND: 1,
@@ -71,7 +71,7 @@ export const UI_CONFIG = {
 
 // Contact Information
 export const CONTACT_INFO = {
-  EMAIL: 'peacemusic80@gmail.com',
+  EMAIL: 'abishekchaulagain5225@gmail.com',
   PHONE: '+977 9816927699',
   ADDRESS: {
     LINE1: 'Mechi Multiple Campus',
