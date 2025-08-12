@@ -198,7 +198,7 @@ const Dashboard = () => {
               className="fixed z-[99999] bg-white/95 dark:bg-gray-900/95"
               style={{
                 left: '16px', 
-                top: '120px', // Position below profile button
+                top: '120px', 
                 width: '288px', // Match sidebar width (w-72)
                 bottom: '16px', // Match sidebar bottom
                 backdropFilter: 'blur(20px)',
