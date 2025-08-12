@@ -1,6 +1,6 @@
 import { createContext, useState, useContext, useEffect, useRef } from 'react';
 import { authAPI, userAPI } from '../services/api';
-
+import { STORAGE_KEYS } from '../constants';
 const AuthContext = createContext();
 
 export const useAuth = () => useContext(AuthContext);
@@ -39,11 +39,13 @@ export const AuthProvider = ({ children }) => {
     };
   }, []);
 
+
+
   // Fetch current user data from API
   const fetchCurrentUser = async () => {
     try {
       // Get token from localStorage
-      const token = localStorage.getItem('token');
+      const token = localStorage.getItem(STORAGE_KEYS.AUTH_TOKEN);
       if (!token) {
         setLoading(false);
         return;
@@ -159,6 +161,11 @@ export const AuthProvider = ({ children }) => {
       const response = await authAPI.login({ email, password });
       console.log('Login response:', response);
 
+      if(response && response.token) {
+        localStorage.setItem(STORAGE_KEYS.AUTH_TOKEN, response.token);
+        console.log('Token stored after login:', response.token);
+      }
+
       if (response && response.data && response.data.user) {
         // Ensure the user object has all required fields
         const userData = {
@@ -180,7 +187,7 @@ export const AuthProvider = ({ children }) => {
       } else {
         console.error('Invalid user data in login response:', response);
 
-        // For development, create a mock user if no valid response
+        // for development  a mock user if no valid response
         if (process.env.NODE_ENV !== 'production') {
           console.log('Creating mock user after login...');
           const mockUser = {
@@ -227,9 +234,11 @@ export const AuthProvider = ({ children }) => {
         throw new Error('Password must be at least 6 characters');
       }
 
-      // Register with API
-      
-      
+      if(response && response.token) {
+        localStorage.setItem(STORAGE_KEYS.AUTH_TOKEN, response.token);
+        console.log('Token stored after signup:', response.token);
+      }
+
 
       if (response && response.data && response.data.user) {
         // Ensure the user object has all required fields
@@ -292,8 +301,8 @@ export const AuthProvider = ({ children }) => {
       // Clear user data regardless of API response
       setUser(null);
       // Clear all authentication tokens and session data
-      localStorage.removeItem('token');
-      localStorage.removeItem('promptpix_current_user');
+      localStorage.removeItem(STORAGE_KEYS.AUTH_TOKEN);
+      localStorage.removeItem(STORAGE_KEYS.CURRENT_USER);
       // Clear any other user-specific data
       sessionStorage.clear();
     }
