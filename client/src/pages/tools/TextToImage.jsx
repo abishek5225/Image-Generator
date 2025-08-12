@@ -8,7 +8,7 @@ import CreditCheck from '../../components/CreditCheck';
 import PortraitPromptAssistant from '../../components/PortraitPromptAssistant';
 import { useLocation } from 'react-router-dom';
 import DashboardContentWrapper from '../../components/DashboardContentWrapper';
-
+import { STORAGE_KEYS } from '../../constants';
 const TextToImage = () => {
   const { useCredits, refreshCredits, user } = useAuth();
   const [prompt, setPrompt] = useState('');
@@ -49,8 +49,12 @@ const TextToImage = () => {
 
     try {
       // Use 2 credits for text-to-image generation
-      const creditSuccess = await useCredits(1);
+      const token = localStorage.getItem(STORAGE_KEYS.AUTH_TOKEN);
+      if (!token) {
+        throw new Error('Please log in again to continue.');
+      }
 
+      const creditSuccess = await useCredits(1);
       if (!creditSuccess) {
         throw new Error('Failed to use credits. Please try again.');
       }

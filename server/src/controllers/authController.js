@@ -357,7 +357,7 @@ exports.forgotPassword = async (req, res) => {
       try {
         const emailResult = await emailService.sendOTPEmail(email, otp);
 
-        console.log(`✅ OTP email sent successfully to ${email}`);
+        console.log(`OTP email sent successfully to ${email}`);
 
         res.status(200).json({
           status: 'success',
@@ -365,7 +365,7 @@ exports.forgotPassword = async (req, res) => {
           emailSent: true
         });
       } catch (emailError) {
-        console.error(`❌ Failed to send email to ${email}:`, emailError.message);
+        console.error(` Failed to send email to ${email}:`, emailError.message);
 
         // If email fails, still allow the process to continue but inform the user
         res.status(500).json({
@@ -392,7 +392,7 @@ exports.forgotPassword = async (req, res) => {
         // Try to send email even in fallback mode
         try {
           await emailService.sendOTPEmail(email, otp);
-          console.log(`✅ Fallback: OTP email sent successfully to ${email}`);
+          console.log(`Fallback: OTP email sent successfully to ${email}`);
 
           res.status(200).json({
             status: 'success',
@@ -400,7 +400,7 @@ exports.forgotPassword = async (req, res) => {
             emailSent: true
           });
         } catch (emailError) {
-          console.error(`❌ Fallback email failed for ${email}:`, emailError.message);
+          console.error(` Fallback email failed for ${email}:`, emailError.message);
 
           res.status(500).json({
             status: 'error',

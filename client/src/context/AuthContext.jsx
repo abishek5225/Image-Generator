@@ -216,6 +216,9 @@ export const AuthProvider = ({ children }) => {
 
     try {
       // Simple validation
+      const response = await authAPI.register({ email, password, displayName });
+      console.log('Signup response:', response);
+
       if (!email || !password || !displayName) {
         throw new Error('Please fill in all fields');
       }
@@ -225,8 +228,8 @@ export const AuthProvider = ({ children }) => {
       }
 
       // Register with API
-      const response = await authAPI.register({ email, password, displayName });
-      console.log('Signup response:', response);
+      
+      
 
       if (response && response.data && response.data.user) {
         // Ensure the user object has all required fields
@@ -243,9 +246,9 @@ export const AuthProvider = ({ children }) => {
           imagesGenerated: response.data.user.imagesGenerated || 0,
           imagesEdited: response.data.user.imagesEdited || 0
         };
-
+          setUser(userData);
         console.log('Processed user data after signup:', userData);
-        setUser(userData);
+        
       } else {
         console.error('Invalid user data in signup response:', response);
 
