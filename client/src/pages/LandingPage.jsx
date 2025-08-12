@@ -63,8 +63,6 @@ const slideUp = {
 const getTypeDisplayName = (type) => {
   const typeMap = {
     'text-to-image': 'AI Generated Image',
-    'upscale': 'Enhanced Image',
-    'uncrop': 'Expanded Image',
     'remove-bg': 'Background Removed',
     'image-editor': 'Edited Image'
   };

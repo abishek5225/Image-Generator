@@ -200,10 +200,10 @@ const Dashboard = () => {
                 left: '16px', 
                 top: '120px', 
                 width: '288px', 
-                bottom: '16px', // Match sidebar bottom
+                bottom: '16px', 
                 backdropFilter: 'blur(20px)',
                 WebkitBackdropFilter: 'blur(20px)',
-                borderRadius: '0 0 24px 24px', // Match sidebar bottom corners
+                borderRadius: '0 0 24px 24px', 
                 border: '1px solid rgba(202, 196, 208, 0.2)',
                 borderTop: 'none',
                 boxShadow: `
