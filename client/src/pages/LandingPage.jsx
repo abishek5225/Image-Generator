@@ -992,29 +992,16 @@ const LandingPage = () => {
                   variant="elevated"
                   className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-blue-100/50 dark:border-blue-800/50 overflow-hidden"
                 >
-                  <div className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mr-4 shadow-lg">
-                        <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                        </svg>
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Image Enhancement</h3>
-                        <p className="text-blue-600 dark:text-blue-400 font-medium">2 credits per operation</p>
-                      </div>
-                    </div>
+                 
+                      
 
-                    <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                      Enhance your images with powerful AI tools. Upscale for higher resolution, remove backgrounds instantly, or expand images beyond their borders with intelligent uncropping.
-                    </p>
+                   
 
                     {/* Enhancement Tools */}
                     <div className="space-y-3 mb-6">
                       {[
-                        { name: 'Upscale', desc: 'Increase resolution up to 4x', icon: '🔍' },
+                        
                         { name: 'Remove Background', desc: 'Clean background removal', icon: '✂️' },
-                        { name: 'Uncrop', desc: 'Expand image boundaries', icon: '📐' }
                       ].map((tool, index) => (
                         <div key={index} className="flex items-center p-3 bg-gradient-to-r from-white to-blue-50/50 dark:from-gray-800/50 dark:to-blue-900/20 rounded-lg">
                           <span className="text-lg mr-3">{tool.icon}</span>
@@ -1033,7 +1020,7 @@ const LandingPage = () => {
                         </span>
                       ))}
                     </div>
-                  </div>
+                 
                 </Card>
               </motion.div>
             </motion.div>
