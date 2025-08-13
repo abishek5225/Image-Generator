@@ -152,7 +152,7 @@ const LandingPage = () => {
     // Load user data and recent activity
     useEffect(() => {
       if (user) {
-        // Load user's gallery items for recent activity
+        // Load user's gallery items  recent activity
         const userItems = getUserGalleryItems(user.id || user._id);
         
         // Convert gallery items to recent activity format
