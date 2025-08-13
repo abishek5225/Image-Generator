@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
+import { getUserGalleryItems, getUserStatistics } from '../services/local-storage/gallery';
 
 // Import Material Design 3 components
 import Button from '../components/md3/Button';
@@ -148,6 +149,62 @@ const LandingPage = () => {
     const [recentActivity, setRecentActivity] = useState([]);
     const [copiedPrompt, setCopiedPrompt] = useState(null);
 
+    // Load user data and recent activity
+    useEffect(() => {
+      if (user) {
+        // Load user's gallery items for recent activity
+        const userItems = getUserGalleryItems(user.id || user._id);
+        
+        // Convert gallery items to recent activity format
+        const activities = userItems
+          .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+          .slice(0, 5) // Show last 5 activities
+          .map(item => ({
+            id: item.id,
+            title: getTypeDisplayName(item.type),
+            description: item.prompt || item.description || 'Image processed',
+            time: formatTimeAgo(item.createdAt),
+            type: item.type,
+            imageUrl: item.imageUrl
+          }));
+
+        setRecentActivity(activities);
+
+        // Calculate real statistics
+        const stats = getUserStatistics(user.id || user._id);
+        setUserStats({
+          totalImages: userItems.length,
+          imagesGenerated: stats.imagesGenerated || 0,
+          imagesEdited: stats.imagesEdited || 0
+        });
+      }
+    }, [user]);
+
+    // Listen for gallery updates
+    useEffect(() => {
+      const handleGalleryUpdate = () => {
+        if (user) {
+          const userItems = getUserGalleryItems(user.id || user._id);
+          const activities = userItems
+            .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+            .slice(0, 5)
+            .map(item => ({
+              id: item.id,
+              title: getTypeDisplayName(item.type),
+              description: item.prompt || item.description || 'Image processed',
+              time: formatTimeAgo(item.createdAt),
+              type: item.type,
+              imageUrl: item.imageUrl
+            }));
+
+          setRecentActivity(activities);
+        }
+      };
+
+      window.addEventListener('galleryUpdated', handleGalleryUpdate);
+      return () => window.removeEventListener('galleryUpdated', handleGalleryUpdate);
+    }, [user]);
+
     // Copy prompt to clipboard
     const copyPromptToClipboard = async (promptText, index) => {
       try {
@@ -177,21 +234,6 @@ const LandingPage = () => {
         }
       }
     };
-
-    // Initialize with empty data - real data would come from API calls
-    useEffect(() => {
-      if (user) {
-        // For now, we'll use empty arrays since the actual data loading
-        // functions don't exist yet. In a real implementation, these would
-        // be API calls to fetch user's gallery items and statistics.
-        setRecentActivity([]);
-        setUserStats({
-          totalImages: 0,
-          imagesGenerated: 0,
-          imagesEdited: 0
-        });
-      }
-    }, [user]);
 
     return (
     <Section
